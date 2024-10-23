@@ -1,0 +1,252 @@
+.work-sans-fuente{
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-header {
+    font-family: "Montserrat";
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-header .logo img {
+    width: 5rem;
+    height: 4rem;
+}
+
+.contenedor-header .logo {
+    text-align: center;
+    color: rgba(98, 120, 247, 1);
+    margin: 0 1rem;
+}
+
+.contenedor-header .logo a {
+    color: rgba(98, 120, 247, 1);
+    text-decoration: none;
+}
+
+.contenedor-header nav {
+    flex-grow: 1;
+}
+
+.contenedor-header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.contenedor-header nav ul li a {
+    color: rgba(98, 120, 247, 1);
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-responsive {
+    display: none;
+    background: rgba(98, 120, 247, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    flex-wrap: wrap;
+}
+.header {
+    font-family: "Prata";
+    text-align: center;
+    color: rgba(98, 120, 247, 1);
+    margin: 3rem;
+    font-size: xx-large;
+}
+
+/* Estilos para las secciones */
+.container, .container-2 {
+    width: 48%; /* Ajusta el ancho para que ambos contenedores se alineen uno al lado del otro */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores de fondo */
+.container {
+    background-color: #ffcccb; /* Color para el primer contenedor */
+}
+
+.container-2 {
+    background-color: #add8e6; /* Color para el segundo contenedor */
+}
+
+/* Estilos para el contenido */
+.content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Imagen alineada a la izquierda */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ccc; /* Color de fondo temporal para la imagen */
+    margin-right: 1rem; /* Espacio entre la imagen y el texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Información alineada a la derecha */
+.info {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.info p {
+    margin: 0.5rem 0;
+}
+
+/* Estilos para los iconos sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: rgba(98, 120, 247, 1); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espacio alrededor del contenido */
+    display: flex; /* Aplica flexbox */
+    justify-content: space-between; /* Separa los elementos a la izquierda y derecha */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+/* Estilos para los iconos de redes sociales */
+.footer .social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Tamaño de los iconos */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.footer .social-icons a:hover {
+    color: #1da1f2; /* Cambia el color al pasar el ratón por encima */
+}
+
+/* Estilos para el contenedor developer */
+.footer .developer {
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+.footer .developer p {
+    margin: 0; /* Elimina el margen */
+    font-size: 14px; /* Tamaño del texto */
+}
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #aac3c7;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav .responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #aac3c7;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #000000;
+        padding: 10px 0;
+    }
+
+  }
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container, .container-2 {
+        width: 100%; /* Ajuste para dispositivos móviles */
+        margin-bottom: 1rem; /* Espacio entre contenedores */
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 1rem; /* Espacio entre la imagen y el texto en móvil */
+    }
+
+    .info {
+        text-align: center; /* Centra el texto en dispositivos móviles */
+    }
+}
